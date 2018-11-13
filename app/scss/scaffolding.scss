@@ -1,0 +1,68 @@
+html,
+body {
+    @include indent;
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    min-width: 320px;
+    min-height: 100vh;
+
+    font-family: $font;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 24px;
+    color: $font-black;
+    word-wrap: break-word;
+
+    background-color: $white;
+}
+
+body > div > svg {
+    display: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+    position: absolute;
+
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+
+    white-space: nowrap;
+
+    border: 0;
+
+    clip-path: inset(100%);
+}
+
+// ≥992px
+@include media-breakpoint-down(md) {
+}
+
+// ≥768px
+@include media-breakpoint-down(sm) {
+}
+
+// ≥576px
+@include media-breakpoint-down(xs) {
+}

@@ -1,0 +1,24 @@
+$font: "montserrat-example", "Arial", sans-serif;
+
+// ————————COLORS———————— //
+$font-black: #262626;
+$font-grey: #333333;
+$white: #ffffff;
+$btn: #ff8141;
+$training: #3a4a62;
+$training-list: #575656;
+$footer: #273d50;
+// —————————————————————— //
+
+// ————————WIDTHS———————— //
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
+// —————————————————————— //
+
+// Customization Bootstrap vars from "app/libs/bootstrap/scss/_variables.scss"
+$grid-gutter-width: 30px;
+$grid-columns: 12;
+$grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px, xxl: 1537px);
+$container-max-widths: (sm: 540px, md: 720px, lg: 960px, xl: 1140px, xxl: 1480px);
+
+$gutter: $grid-gutter-width;

@@ -1,0 +1,32 @@
+.page-footer {
+    
+}
+
+.page-footer__wrap {
+    
+}
+
+.page-footer__title {
+    @include indent;
+
+}
+
+// ≥1540px
+@include media-breakpoint-down(xl) {
+}
+
+// ≥1200px
+@include media-breakpoint-down(lg) {
+}
+
+// ≥992px
+@include media-breakpoint-down(md) {
+}
+
+// ≥768px
+@include media-breakpoint-down(sm) {
+}
+
+// ≥576px
+@include media-breakpoint-down(xs) {
+}

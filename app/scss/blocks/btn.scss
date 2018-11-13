@@ -1,0 +1,65 @@
+.btn {
+    display: block;
+    width: 221px;
+    height: 38px;
+    padding-top: 2px;
+    padding-left: 20px;
+
+    font-family: $font;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 32px;
+    color: $white;
+    text-align: left;
+    text-decoration: none;
+
+    background-color: $btn;
+    border: none;
+    border-radius: 33px;
+
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+        color: $white;
+        text-decoration: none;
+
+        outline: none;
+        background-color: tone($btn, 2, down);
+    }
+
+    &:active {
+        color: rgba($white, 0.5);
+
+        background-color: tone($btn, 5, down);
+    }
+
+    &--header {
+    	margin-top: 12px;
+    	margin-left: 190px;
+    }
+
+    &--main {
+    	padding-left: 0;
+    }
+}
+
+// ≥1537px
+@include media-breakpoint-down(xl) {
+}
+
+// ≥1200px
+@include media-breakpoint-down(lg) {
+}
+
+// ≥992px
+@include media-breakpoint-down(md) {
+}
+
+// ≥768px
+@include media-breakpoint-down(sm) {
+}
+
+// ≥576px
+@include media-breakpoint-down(xs) {
+}

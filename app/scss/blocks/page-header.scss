@@ -1,0 +1,37 @@
+.page-header {
+    
+}
+
+.page-header__wrap {
+    
+
+    // background-image: url("../img/bg-header2@1x.png");
+    // background-repeat: no-repeat;
+    // background-position: 100% 0;
+
+    // @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    //     background-image: url("../img/bg-header2@2x.png");
+    //     background-size: 1221px auto;
+    // }
+}
+
+// ≥1540px
+@include media-breakpoint-down(xl) {
+    
+}
+
+// ≥1200px
+@include media-breakpoint-down(lg) {
+}
+
+// ≥992px
+@include media-breakpoint-down(md) {
+}
+
+// ≥768px
+@include media-breakpoint-down(sm) {
+}
+
+// ≥576px
+@include media-breakpoint-down(xs) {
+}

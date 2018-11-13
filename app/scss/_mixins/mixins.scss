@@ -1,0 +1,21 @@
+@mixin no-outline {
+    outline: none;
+    background: transparent;
+}
+
+@mixin indent($margin: 0, $padding: 0) {
+    margin: $margin;
+    padding: $padding;
+}
+
+@mixin list-reset {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+@function tone($color, $tone: 1, $dir: up) {
+  $adjust: if($dir == up, 16, -16) * $tone;
+  @return adjust-color($color, $red: $adjust, $green: $adjust, $blue: $adjust);
+}
