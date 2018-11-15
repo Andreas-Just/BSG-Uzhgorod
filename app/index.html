@@ -12,7 +12,7 @@
     <!-- Template Basic Images Start -->
     <meta property="og:image" content="path/to/image.jpg">
     <link rel="icon" href="favicon/favicon.ico">
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon-256x256.png">
     <!-- Template Basic Images End -->
 
     <!-- Custom Browsers Color Start -->
@@ -36,44 +36,58 @@
 	<body>
 		<header class="page-header">
 			<div class="page-header__top">
-				<a class="page-header__logo icon-logo"></a>
+				<a class="page-header__logo-link">
+					<svg class="page-header__logo icon icon--logo" width="60" height="60"><use xlink:href="#icon-logo"></use></svg>
+				</a>
 				<nav class="main-nav main-nav--closed main-nav--nojs">
-					<div class="main-nav__wrapper">
-						<ul class="main-nav__list site-list">
-							<li class="site-list__item">
-								<a href="#">Что там будет</a>
-							</li>
-							<li class="site-list__item">
-								<a href="#">Подарок</a>
-							</li>
-							<li class="site-list__item">
-								<a href="#">Где собираемся</a>
-							</li>
-							<li class="site-list__item">
-								<a href="#">Об организации</a>
-							</li>
-							<li class="site-list__item">
-								<a href="#">F.A.Q.</a>
-							</li>
-							<li class="site-list__item">
-								<a href="#">Контакты</a>
-							</li>
-						</ul>
-					</div>
+					<ul class="main-nav__list">
+						<li class="main-nav__item">
+							<a class="main-nav__link" href="#">Что там будет</a>
+						</li>
+						<li class="main-nav__item">
+							<a class="main-nav__link" href="#">Подарок</a>
+						</li>
+						<li class="main-nav__item">
+							<a class="main-nav__link" href="#">Где собираемся</a>
+						</li>
+						<li class="main-nav__item">
+							<a class="main-nav__link" href="#">Об организации</a>
+						</li>
+						<li class="main-nav__item">
+							<a class="main-nav__link" href="#">F.A.Q.</a>
+						</li>
+						<li class="main-nav__item">
+							<a class="main-nav__link" href="#">Контакты</a>
+						</li>
+					</ul>
 				</nav>
 			</div>
 			<div class="page-header__center">
 				<p class="page-header__info">22 ноября – 2 декабря</p>
-				<h1 class="page-header__title"></h1>
-				<p class="page-header__info">Две недели совместного чтения Библии в приятной компании студентов и за горячим чаем</p>
+				<h1 class="page-header__title">Вечера чтения Библии</h1>
+				<p class="page-header__info page-header__info--center">Две недели совместного чтения Библии в приятной</p>
+				<p class="page-header__info page-header__info--bottom">компании студентов и за горячим чаем</p>
 			</div>
 			<div class="page-header__bottom schedule">
 				<ul class="schedule__list">
-					<li class="schedule__item">17:00–20:00</li>
-					<li class="schedule__item">Понедельник–Пятница</li>
-					<li class="schedule__item">ул. Заньковецкой, 89А</li>
+					<li class="schedule__item">
+						<svg class="schedule__icon schedule__icon--clock" aria-hidden="true" role="presentation" width="21" height="21"><use xlink:href="#icon-clock"></use></svg>
+						17:00–20:00
+					</li>
+					<li class="schedule__item">
+						<svg class="schedule__icon schedule__icon--calendar" aria-hidden="true" role="presentation" width="22" height="21"><use xlink:href="#icon-calendar"></use></svg>
+						Понедельник – Пятница
+					</li>
+					<li class="schedule__item schedule__item--address">
+						<a class="schedule__link" href="#">
+              <svg class="schedule__icon schedule__icon--marker" aria-hidden="true" role="presentation" width="22" height="22"><use xlink:href="#icon-marker"></use></svg>
+              ул. Заньковецкой, 89А
+            </a>
+					</li>
 				</ul>
-				<button class="schedule__btn btn">Посетить вечер</button>
+				<a class="schedule__btn btn" href="#">Посетить вечер
+					<svg class="icon icon--arrow-btn" aria-hidden="true" role="presentation" width="30" height="16"><use xlink:href="#icon-arrow-btn"></use></svg>
+				</a>
 			</div>
 		</header>
 
@@ -126,7 +140,9 @@
 						<p class="agenda__text">Сможете согреться горячим чаем с печеньем после холодной улицы</p>
 					</li>
 				</ul>
-				<button class="schedule__btn btn">Посетить вечер</button>
+				<a class="agenda__btn btn" href="#">Посетить вечер
+					<svg class="icon icon--arrow-btn" aria-hidden="true" role="presentation" width="30" height="16"><use xlink:href="#icon-arrow-btn"></use></svg>
+				</a>
 			</section>
 
 			<section class="present">
@@ -185,13 +201,15 @@
 						</ul>
 					</div>
 				</div>
-				<button class="gathering__btn btn">Посетить вечер</button>
+				<a class="gathering__btn btn" href="#">Посетить вечер
+					<svg class="icon icon--arrow-btn" aria-hidden="true" role="presentation" width="30" height="16"><use xlink:href="#icon-arrow-btn"></use></svg>
+				</a>
 			</section>
 
 			<section class="organizer">
 				<h2 class="organizer__title">Об организаторе</h2>
 				<div class="organizer__left">
-					<svg class="organizer__logo icon-logo"></svg>
+					<svg class="organizer__logo icon icon--logo" width="60" height="60"><use xlink:href="#icon-logo"></use></svg>
 				</div>
 				<div class="organizer__right">
 					<h3 class="organizer__info">Мы ‒ сообщество студентов Bible Study Group Ужгород.</h3>
@@ -278,6 +296,8 @@
 			<button class="page-footer__btn">Зарегистрироваться</button>
 		</footer>
 
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="xprecise.min.js"></script>
     <script src="js/scripts.min.js"></script>
 
 	</body>
