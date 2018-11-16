@@ -1,15 +1,14 @@
 .agenda {
     @include list-reset;
 
-    margin-top: 82px;
-    margin-bottom: 85px;
+    margin: 82px auto 85px;
 }
 .agenda__item {
     position: relative;
 
     &--reading {
         width: 416px;
-        margin-right: 21px;
+        margin-right: 20px;
         padding-top: 71px;
     }
     &--reading:hover {
@@ -51,6 +50,9 @@
             color: #8d8eba;
         }
     }
+    &--warm {
+        width: 436px;
+    }
     &--warm:hover {
         .icon--tea-cup {
             color: #ffd173;
@@ -61,6 +63,8 @@
     position: absolute;
     top: 0;
     left: 0;
+
+    color: $font-grey;
 }
 .agenda__title {
     @include indent;
@@ -89,10 +93,22 @@
     }
 }
 .agenda__images {
+    &--reading {
+        width: 590px;
+        height: 382px;
+    }
     &--questions {
+        width: 364px;
+        height: 443px;
         margin: -56px 72px 108px 0;
+    }
+    &--fellowship {
+        width: 577px;
+        height: 405px;
     }
 }
 .agenda__text {
     @include indent;
+
+    color: $font-black;
 }

@@ -1,0 +1,56 @@
+.organizer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1026px;
+    margin: 0 auto;
+
+    &:hover .organizer__logo {
+        animation: color 5s infinite alternate;
+    }
+}
+.organizer__title {
+    width: 100%;
+    margin-bottom: 63px;
+}
+
+.organizer__left {
+    width: 330px;
+
+    text-align: center;
+}
+.organizer__logo {
+    color: #588ac7;
+}
+@keyframes color {
+    25% {
+        color: gold;
+    }
+    50% {
+        color: skyblue;
+    }
+    75% {
+        color: crimson;
+    }
+}
+
+.organizer__right {
+    width: 679px;
+}
+.organizer__info {
+    @include indent;
+
+    margin-top: 14px;
+
+    font-size: 22px;
+    font-weight: bold;
+}
+.organizer__text {
+    @include indent;
+
+    margin-top: 15px;
+
+    &:last-child {
+        margin-top: 7px;
+    }
+}

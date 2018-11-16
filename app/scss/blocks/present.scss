@@ -1,0 +1,74 @@
+.present {
+    padding-top: 54px;
+
+    color: $white;
+
+    background-color: $bg-link;
+    background-image: url("../img/bg_present@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center 0;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/bg_present@2x.jpg");
+        background-size: 1366px auto;
+    }
+}
+.present__inner {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1026px;
+    margin: 0 auto;
+}
+.present__title {
+    width: 100%;
+    text-align: center;
+    color: $white;
+}
+.present__left {
+    width: 444px;
+    height: 293px;
+    margin: 46px 58px 0 23px;
+}
+.present__right {
+    width: 500px;
+
+    font-weight: 600;
+    line-height: 20px;
+}
+.present__info {
+    @include indent;
+
+    margin-top: 97px;
+}
+.present__bible {
+    display: block;
+    margin: 6px 0;
+
+    font-size: 26px;
+    font-weight: 800;
+    line-height: 28px;
+
+    sup {
+        position: relative;
+        top: -11px;
+
+        font-size: 12px;
+        font-weight: 500;
+    }
+}
+.present__remark {
+    max-width: 333px;
+    margin: 155px 59px 20px auto;
+
+    font-size: 12px;
+    line-height: 16px;
+    text-align: right;
+
+    sup {
+        position: relative;
+        top: -5px;
+
+        font-size: 7px;
+        font-weight: 500;
+    }
+}

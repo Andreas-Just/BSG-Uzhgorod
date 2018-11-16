@@ -93,7 +93,7 @@
 
 		<main class="page-main">
 			<section class="occurs-where">
-				<h2 class="occurs-where__title">Что там будет?</h2>
+				<h2 class="page-main__title occurs-where__title">Что там будет?</h2>
 				<ul class="occurs-where__list agenda">
 					<li class="agenda__item agenda__item--reading">
 						<svg class="agenda__icon icon--book" aria-hidden="true" role="presentation" width="44" height="35"><use xlink:href="#icon-book"></use></svg>
@@ -151,31 +151,35 @@
 			</section>
 
 			<section class="present">
-				<h2 class="present__title">Подарок</h2>
-				<div class="present__left">
-					<picture>
-						<source type="image/webp" media="(max-width: 576px)" srcset="img/webp/gift-mobile@1x.webp 1x, img/webp/gift-mobile@2x.webp 2x, img/webp/gift-mobile@3x.webp 3x">
-            <source type="image/webp" srcset="img/webp/gift-desktop@1x.webp 1x, img/webp/gift-desktop@2x.webp 2x, img/webp/gift-desktop@3x.webp 3x">
-            <source media="(max-width: 576px)" srcset="img/gift-mobile@1x.png 1x, img/gift-mobile@2x.png 2x, img/gift-mobile@3x.png 3x">
-            <img class="agenda__image" src="img/gift-desktop@1x.png" srcset="img/gift-desktop@2x.png 2x, img/gift-desktop@3x.png 3x" alt="Новый Завет">
-					</picture>
-				</div>
-				<div class="present__right>
-					<p class="present__info">Вас ждет подарок!!
-						<strong class="present__bible">Новый Завет<sup>&#10059;</sup> с примечаниями</strong>
-						в одном из лучших переводов на русский язык
-					</p>
-					<p class="present__remark"><sup>&#10059;</sup> Новый Завет – вторая часть Библии, написанная после рождения Иисуса Христа</p>
+				<div class="present__inner">
+					<h2 class="page-main__title present__title">Подарок</h2>
+					<div class="present__left">
+						<picture>
+							<source type="image/webp" media="(max-width: 576px)" srcset="img/webp/gift-mobile@1x.webp 1x, img/webp/gift-mobile@2x.webp 2x, img/webp/gift-mobile@3x.webp 3x">
+	            <source type="image/webp" srcset="img/webp/gift-desktop@1x.webp 1x, img/webp/gift-desktop@2x.webp 2x, img/webp/gift-desktop@3x.webp 3x">
+	            <source media="(max-width: 576px)" srcset="img/gift-mobile@1x.png 1x, img/gift-mobile@2x.png 2x, img/gift-mobile@3x.png 3x">
+	            <img class="agenda__image" src="img/gift-desktop@1x.png" srcset="img/gift-desktop@2x.png 2x, img/gift-desktop@3x.png 3x" alt="Новый Завет">
+						</picture>
+					</div>
+					<div class="present__right">
+						<p class="present__info">Вас ждет подарок!!
+							<strong class="present__bible">Новый Завет<sup>&#10059;</sup> с примечаниями</strong>
+							в одном из лучших переводов <br> на русский язык
+						</p>
+						<p class="present__remark"><sup>&#10059;</sup> Новый Завет – вторая часть Библии, написанная после рождения Иисуса Христа</p>
+					</div>
 				</div>
 			</section>
 
 			<section class="gathering">
-				<h2 class="gathering__title">Где собираемся?</h2>
-				<div class="gathering__info meeting">
+				<h2 class="page-main__title gathering__title">Где собираемся?</h2>
+				<div class="gathering__inner meeting">
 					<div class="meeting__left">
 						<h3 class="meeting__title">Кафе "Сендвич", ул. Заньковецкая 89А</h3>
-						<p class="meeting__info">Вечера будут проходить с понедельника по пятницу в 17:00-20:00. Кафе в корпусе факультета информатики Закарпатского государственного университета</p>
-						<div class="meeting__map"></div>
+						<p class="meeting__info">Вечера будут проходить с понедельника по пятницу в&nbsp;17:00-20:00. Кафе в корпусе факультета информатики Закарпатского государственного университета</p>
+						<div class="meeting__map">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2638.166150889826!2d22.26461866364226!3d48.60666280150086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473918fb0df5f325%3A0x43f618b8466db7cc!2z0YPQuy4g0JfQsNC90YzQutC-0LLQtdGG0LrQvtC5LCA4OSwg0KPQttCz0L7RgNC-0LQsINCX0LDQutCw0YDQv9Cw0YLRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwgODgwMDA!5e0!3m2!1sru!2sua!4v1542352885499" width="495" height="272" frameborder="0" style="border:0" allowfullscreen></iframe>
+						</div>
 					</div>
 					<div class="meeting__right">
 						<ul class="meeting__slider owl-carousel owl-theme">
@@ -212,15 +216,19 @@
 			</section>
 
 			<section class="organizer">
-				<h2 class="organizer__title">Об организаторе</h2>
+				<h2 class="page-main__title organizer__title">Об организаторе</h2>
 				<div class="organizer__left">
-					<svg class="organizer__logo icon icon--logo" width="60" height="60"><use xlink:href="#icon-logo"></use></svg>
+					<svg class="organizer__logo icon icon--logo" width="235" height="235"><use xlink:href="#icon-logo"></use></svg>
 				</div>
 				<div class="organizer__right">
 					<h3 class="organizer__info">Мы ‒ сообщество студентов Bible Study Group Ужгород.</h3>
-					<p class="organizer__text">Среди нас собрались люди, которые начали задаваться вечными вопросами   и нашли на многие из них ясные ответы в Библии. Мы любим читать Библию. Любим помогать друг другу и проводить время вместе. Также, мы общаемся с такими же студентами по всему миру. Сейчас похожие сообщества существуют во многих городах Украины и других стран мира, таких как Россия, Армения, Германия, США и т.д.</p>
+					<p class="organizer__text">Среди нас собрались люди, которые начали задаваться вечными вопросами и&nbsp;нашли на многие из них ясные ответы в Библии. Мы любим читать Библию. Любим помогать друг другу и проводить время вместе.</p>
+					<p class="organizer__text">Также, мы общаемся с такими же студентами по всему миру. Сейчас похожие сообщества существуют во многих городах Украины и других стран мира, таких как Россия, Армения, Германия, США и т.д.</p>
 				</div>
-				<ul class="organizer__communion fellowships">
+			</section>
+
+			<section class="fellowships">
+				<ul class="fellowships__list">
 					<li class="fellowship__item">
 						<a class="fellowship__link" href="#">
 							<img class="fellowship__image" src="" alt="г. Киев, Украина">
@@ -304,6 +312,7 @@
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 		<script src="xprecise.min.js"></script>
     <script src="js/scripts.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
 
 	</body>
 </html>

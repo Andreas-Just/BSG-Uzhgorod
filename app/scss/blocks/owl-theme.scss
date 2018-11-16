@@ -1,0 +1,104 @@
+.meeting {
+    .owl-theme .owl-nav {
+        display: flex;
+        justify-content: space-between;
+    }
+    .owl-theme .owl-nav .owl {
+        &-prev,
+        &-next {
+            position: absolute;
+            top: 50%;
+            z-index: 10;
+
+            width: 50px;
+            height: 50px;
+            padding: 0;
+
+            outline: none;
+
+            transform: translateY(-25%);
+
+            &::before {
+                position: absolute;
+                top: 0;
+
+                width: 15px;
+                height: 20px;
+                padding: 0;
+
+                background-image: url("../img/slider-back.svg");
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 15px 25px;
+
+                content: "";
+                transform: translateX(50%);
+            }
+
+            span {
+                display: none;
+            }
+        }
+
+        &-prev {
+            left: 0;
+        }
+
+        &-next::before {
+            transform: rotate(180deg);
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    .owl-theme .owl-nav .disabled {
+        opacity: 0.5;
+
+        cursor: default;
+    }
+
+    .owl-theme .owl-dots {
+        position: relative;
+        top: -25px;
+
+        display: flex;
+        justify-content: center;
+        padding: 0 25px;
+    }
+    .owl-theme .owl-dots .owl-dot {
+        @include indent;
+
+        width: 8px;
+        height: 8px;
+        margin-right: 27px;
+
+        font-size: 0;
+        line-height: 0;
+
+        border: 1px solid $white;
+        border-radius: 50%;
+        background: none;
+
+        &:hover {
+            outline: none;
+            box-shadow: 0 0 1px 1px #cccccc,
+            inset 0 0 1px 1px #cccccc;
+        }
+        &:focus {
+            outline: none;
+        }
+        &:active {
+            opacity: 0.3;
+        }
+
+        &.active {
+            background-color: $white;
+        }
+
+        &:first-child {
+            margin-right: 0;
+        }
+    }
+}

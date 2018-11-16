@@ -1,20 +1,22 @@
-.occurs-where {
+.gathering {
     max-width: 1026px;
     margin: 0 auto;
     margin-bottom: 80px;
 }
-.occurs-where__title {
+.gathering__title {
     @include indent;
-    
-    margin-top: 93px;
+
+    margin-top: 88px;
 }
-.occurs-where__list {
+.gathering__inner {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
-.occurs-where__btn {
+
+.gathering__btn {
     height: 43px;
-    margin: 0 auto;
+    margin: 65px auto;
     padding-top: 5px;
 
     box-shadow: 0 18px 40px rgba(#ef9252, 0.6);

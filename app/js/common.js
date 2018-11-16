@@ -8,3 +8,13 @@ $.get("img/sprite.svg", function(data) {
   div.innerHTML = new XMLSerializer().serializeToString(data.documentElement);
   document.body.insertBefore(div, document.body.childNodes[0]);
 });
+
+$(document).ready(function(){
+  $(".owl-carousel").owlCarousel({
+  	rtl:true,
+    items:1,
+    loop:true,
+    nav:true
+  });
+});
+
