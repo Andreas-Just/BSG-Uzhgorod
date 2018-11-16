@@ -1,6 +1,6 @@
 .btn {
     display: block;
-    width: 221px;
+    width: 222px;
     height: 38px;
     padding-left: 20px;
     padding-top: 2px;
@@ -18,20 +18,18 @@
     border-radius: 33px;
 
     cursor: pointer;
+    transition: all 300ms;
 
-    &:hover,
-    &:focus {
+    &:hover {
         color: $white;
         text-decoration: none;
-
+        filter: saturate(2);
         outline: none;
-        background-color: tone($btn, 2, down);
+        background-color: tone($btn, 1, down);
     }
 
     &:active {
         color: rgba($white, 0.5);
-
-        background-color: tone($btn, 5, down);
     }
 
     &--header {

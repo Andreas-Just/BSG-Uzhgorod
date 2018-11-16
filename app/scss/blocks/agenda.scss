@@ -1,0 +1,98 @@
+.agenda {
+    @include list-reset;
+
+    margin-top: 82px;
+    margin-bottom: 85px;
+}
+.agenda__item {
+    position: relative;
+
+    &--reading {
+        width: 416px;
+        margin-right: 21px;
+        padding-top: 71px;
+    }
+    &--reading:hover {
+        .icon--book {
+            color: #8d8eba;
+        }
+    }
+    &--questions {
+        width: 437px;
+        margin-top: 209px;
+        padding-top: 80px;
+    }
+    &--questions:hover {
+        .icon--question {
+            color: #ffd173;
+        }
+    }
+    &--fellowship {
+        width: 330px;
+        margin-right: 33px;
+        padding-top: 78px;
+    }
+    &--fellowship:hover {
+        .icon--five {
+            color: #88a3d6;
+        }
+    }
+    &--ambiance,
+    &--warm {
+        width: 480px;
+        margin-top: 100px;
+        padding-top: 81px;
+    }
+    &--ambiance {
+        margin-right: 110px;
+    }
+    &--ambiance:hover {
+        .icon--happy {
+            color: #8d8eba;
+        }
+    }
+    &--warm:hover {
+        .icon--tea-cup {
+            color: #ffd173;
+        }
+    }
+}
+.agenda__icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.agenda__title {
+    @include indent;
+
+    display: inline-block;
+    margin-bottom: 11px;
+    padding: 10px 14px;
+
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 1;
+    color: $white;
+
+    border-radius: 4px;
+
+    &--reading,
+    &--ambiance {
+        background-color: #8d8eba;
+    }
+    &--questions,
+    &--warm {
+        background-color: #ffd173;
+    }
+    &--fellowship {
+        background-color: #88a3d6;
+    }
+}
+.agenda__images {
+    &--questions {
+        margin: -56px 72px 108px 0;
+    }
+}
+.agenda__text {
+    @include indent;
+}
