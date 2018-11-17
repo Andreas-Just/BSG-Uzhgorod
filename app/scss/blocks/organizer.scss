@@ -20,16 +20,19 @@
     text-align: center;
 }
 .organizer__logo {
-    color: #588ac7;
+    color: $bsg;
 }
 @keyframes color {
-    25% {
-        color: gold;
+    20% {
+        color: green;
     }
-    50% {
+    40% {
         color: skyblue;
     }
-    75% {
+    60% {
+        color: gold;
+    }
+    80% {
         color: crimson;
     }
 }

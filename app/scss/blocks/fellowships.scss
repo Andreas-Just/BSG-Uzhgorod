@@ -1,13 +1,100 @@
 .fellowships {
     margin-top: 75px;
+    padding-top: 35px;
 
     background-color: #f7f7f7;
+}
+.fellowships__title {
+    margin-bottom: 30px;
+
+    font-size: 22px;
+    font-weight: bold;
+    color: $font-grey;
+    text-align: center;
+
+    transform: translateX(-26.5%);
 }
 .fellowships__list {
     @include list-reset;
 
     display: flex;
+    overflow: hidden;
     flex-wrap: nowrap;
     max-width: 1026px;
     margin: 0 auto;
+}
+.fellowship__item {
+    flex-shrink: 0;
+    flex-basis: 155px;
+    margin-right: 105px;
+    margin-bottom: 20px;
+
+    &:hover {
+        .fellowship__link {
+            color: $font-grey;
+            text-decoration: none;
+        }
+        .fellowship__image {
+            filter: none;
+        }
+        .fellowship__logo {
+            color: $bsg;
+        }
+    }
+    &:active {
+        .fellowship__link {
+            color: #cdcdcd;
+            text-decoration: none;
+
+            transition-duration: 200ms;
+        }
+        .fellowship__image {
+            transition-duration: 200ms;
+
+            filter: opacity(0.3);
+        }
+        .fellowship__logo {
+            color: #cdcdcd;
+        }
+    }
+}
+.fellowship__link {
+    color: $fellowships;
+    text-align: center;
+
+    transition: all 500ms ease-in-out;
+}
+.fellowship__image {
+    width: 155px;
+    height: 155px;
+    margin-bottom: 15px;
+
+    transition-timing-function: ease-in-out;
+    transition-duration: 500ms;
+    transition-property: filter;
+
+    &--chernigiv {
+        filter: brightness(75%) contrast(300%) saturate(0) opacity(40%);
+    }
+    &--moscow {
+        filter: brightness(88%) contrast(300%) saturate(0) opacity(60%);
+    }
+    &--stuttgard {
+        filter: brightness(80%) contrast(300%) saturate(0) opacity(45%);
+    }
+    &--csoc {
+        filter: brightness(75%) contrast(300%) saturate(0) opacity(50%);
+    }
+    &--ohaio {
+        filter: brightness(200%) contrast(120%) saturate(0) opacity(50%);
+    }
+}
+.fellowship__logo {
+    color: #c2c2c2;
+
+    border: 5px solid rgba($white, 0.5);
+    border-radius: 50%;
+    background-color: rgba($white, 0.7);
+
+    transition-property: color;
 }

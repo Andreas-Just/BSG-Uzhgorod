@@ -1,0 +1,34 @@
+.contacts {
+	display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+	max-width: 1026px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+.contacts__inner {
+	margin-top: 12px;
+}
+.contacts__title {
+	display: block;
+	font-size: 22px;
+	font-weight: bold;
+}
+.contacts__table {
+	margin-top: 14px;
+	color: $font-grey;
+}
+.contacts__phone {
+	width: 155px;
+	text-align: justify;
+}
+.contacts__name {
+	padding-left: 10px;
+	width: 175px;
+	text-align: left;
+}
+.contacts__copyright {
+	display: block;
+	margin-top: 34px;
+	color: $font-grey;
+}
