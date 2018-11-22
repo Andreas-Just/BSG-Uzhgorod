@@ -32,3 +32,11 @@
 	margin-top: 34px;
 	color: $font-grey;
 }
+
+// ≥992px
+@include media-breakpoint-down(md) {
+	.contacts {
+		justify-content: center;
+	}
+}
+

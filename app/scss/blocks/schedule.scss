@@ -1,6 +1,9 @@
 .schedule {
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
+
+	transition: all 500ms ease-in-out;
 }
 .schedule__list {
 	@include list-reset;
@@ -58,4 +61,29 @@
 .schedule__btn {
 	position: relative;
 	margin-right: 41px;
+}
+
+// ≥1200px
+@include media-breakpoint-down(lg) {
+	.schedule {
+		justify-content: center;
+	}
+    .schedule__list {
+        margin-bottom: 30px;
+    }
+    .schedule__btn {
+		margin-right: 51px;
+	}
+}
+
+// ≥992px
+@include media-breakpoint-down(md) {
+	.schedule__list {
+		justify-content: center;
+		flex-wrap: wrap;
+		margin-bottom: 10px;
+	}
+	.schedule__item {
+		margin-bottom: 10px;
+	}
 }

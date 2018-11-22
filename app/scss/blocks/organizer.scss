@@ -57,3 +57,10 @@
         margin-top: 7px;
     }
 }
+
+// ≥1200px
+@include media-breakpoint-down(lg) {
+    .organizer__right {
+        width: 648px;
+    }
+}

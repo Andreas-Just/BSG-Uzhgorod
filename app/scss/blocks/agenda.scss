@@ -5,6 +5,8 @@
 }
 .agenda__item {
     position: relative;
+    
+    transition: all 500ms ease-in-out;
 
     &--reading {
         width: 416px;
@@ -93,6 +95,8 @@
     }
 }
 .agenda__images {
+    transition: all 500ms ease-in-out;
+
     &--reading {
         width: 590px;
         height: 382px;
@@ -111,4 +115,58 @@
     @include indent;
 
     color: $font-black;
+}
+
+// ≥1200px
+@include media-breakpoint-down(lg) {
+    .agenda__images {
+        &--reading {
+            width: 540px;
+            height: 350px;
+        }
+    }
+}
+
+// ≥992px
+@include media-breakpoint-down(md) {
+    .agenda__item {
+
+        &--reading {
+            margin-right: 0;
+        }
+        &--questions {
+            margin-right: 60px;
+        }
+        &--fellowship {
+            width: 360px;
+            margin-right: 75px;
+        }
+        &--questions,
+        &--fellowship,
+        &--ambiance,
+        &--warm {
+            margin-top: 40px;
+        }
+    }
+    .agenda__images {
+        &--reading {
+            width: 510px;
+            height: 330px;
+        }
+        &--questions {
+            width: 300px;
+            height: 365px;
+            margin-right: 120px;
+            margin-bottom: 0px;
+        }
+        &--fellowship {
+            width: 500px;
+            height: 351px;
+        }
+        &--reading,
+        &--questions,
+        &--fellowship {
+            margin-top: 20px;
+        }
+    }
 }

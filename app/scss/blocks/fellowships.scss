@@ -1,4 +1,5 @@
 .fellowships {
+    overflow: hidden;
     margin-top: 75px;
     padding-top: 35px;
 
@@ -18,7 +19,7 @@
     @include list-reset;
 
     display: flex;
-    overflow: hidden;
+    
     flex-wrap: nowrap;
     max-width: 1026px;
     margin: 0 auto;
@@ -48,13 +49,11 @@
 
             transition-duration: 200ms;
         }
-        .fellowship__image {
+        .fellowship__image,
+        .fellowship__logo {
             transition-duration: 200ms;
 
             filter: opacity(0.3);
-        }
-        .fellowship__logo {
-            color: #cdcdcd;
         }
     }
 }

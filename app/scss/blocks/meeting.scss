@@ -1,6 +1,7 @@
 .meeting__left,
 .meeting__right {
     margin-top: 70px;
+    transition: all 500ms ease-in-out;
 }
 
 .meeting__left {
@@ -17,6 +18,11 @@
     margin-top: 30px;
 
     box-shadow: 0 0 0 2px #e5e5e5;
+
+    transition: all 500ms ease-in-out;
+    iframe {
+        transition: all 500ms ease-in-out;
+    }
 }
 
 .meeting__right {
@@ -30,4 +36,38 @@
 .meeting__image {
     width: 494px;
     height: 404px;
+}
+
+// ≥1200px
+@include media-breakpoint-down(lg) {
+    .meeting__map {
+        width: 450px;
+        height: 222px;
+
+        iframe {
+            width: 450px;
+            height: 222px;
+        }
+    }
+    .meeting__right,
+    .meeting__image {
+        width: 475px;
+        height: 388px;
+    }
+}
+
+// ≥992px
+@include media-breakpoint-down(md) {
+    .meeting__map {
+        width: 475px;
+        height: 235px;
+
+        iframe {
+            width: 475px;
+            height: 235px;
+        }
+    }
+    .meeting__right {
+        margin-top: 30px;
+    }
 }

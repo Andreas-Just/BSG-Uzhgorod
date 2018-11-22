@@ -1,4 +1,5 @@
 .present {
+    // width: 100vw;
     padding-top: 54px;
 
     color: $white;
@@ -25,9 +26,12 @@
     color: $white;
 }
 .present__left {
+    margin: 46px 58px 0 23px;
+}
+.present__image {
     width: 444px;
     height: 293px;
-    margin: 46px 58px 0 23px;
+    transition: all 500ms ease-in-out;
 }
 .present__right {
     width: 500px;
@@ -39,6 +43,7 @@
     @include indent;
 
     margin-top: 97px;
+    transition: all 300ms ease-in-out;
 }
 .present__bible {
     display: block;
@@ -64,11 +69,34 @@
     line-height: 16px;
     text-align: right;
 
+    transition: all 300ms ease-in-out;
+
     sup {
         position: relative;
         top: -5px;
 
         font-size: 7px;
         font-weight: 500;
+    }
+}
+
+// ≥1200px
+@include media-breakpoint-down(lg) {
+    .present__image {
+        width: 396px;
+        height: 261px;
+    }
+}
+
+// ≥992px
+@include media-breakpoint-down(md) {
+    .present__inner {
+        justify-content: center;
+    }
+    .present__info {
+        margin-top: 10px;
+    }
+    .present__remark {
+        margin-top: 30px;
     }
 }
